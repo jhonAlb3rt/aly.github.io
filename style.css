@@ -1,0 +1,86 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background: linear-gradient(to bottom right, #ff9ecf, #ff4da6);
+  color: white;
+  overflow-x: hidden;
+}
+
+/* Sections */
+section {
+  padding: 50px 20px;
+  min-height: 100vh;
+}
+
+.surprise {
+  display: none;
+}
+
+.intro-img, .surprise-img {
+  max-width: 250px;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.4);
+}
+
+button {
+  padding: 12px 25px;
+  margin-top: 15px;
+  font-size: 16px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  background: white;
+  color: #ff1a8c;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+button:hover {
+  transform: scale(1.1);
+}
+
+.hidden {
+  display: none;
+}
+
+.uploaded-img {
+  margin-top: 20px;
+  max-width: 250px;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.4);
+}
+
+/* Confetti */
+.confetti {
+  position: fixed;
+  width: 10px;
+  height: 10px;
+  background: yellow;
+  top: -10px;
+  animation: fall 3s linear forwards;
+}
+
+@keyframes fall {
+  to {
+    transform: translateY(100vh) rotate(720deg);
+    opacity: 0;
+  }
+}
+.secret {
+  margin-top: 30px;
+  padding: 20px;
+  background: rgba(255,255,255,0.2);
+  border-radius: 20px;
+  font-size: 18px;
+  backdrop-filter: blur(10px);
+  animation: glowSecret 1.5s infinite alternate;
+}
+
+@keyframes glowSecret {
+  from { box-shadow: 0 0 10px white; }
+  to { box-shadow: 0 0 25px pink; }
+}
+function showSecret() {
+  document.getElementById("secretMessage").classList.remove("hidden");
+}

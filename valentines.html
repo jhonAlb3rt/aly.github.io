@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <title>a little suprise for you</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- INTRO SECTION -->
+  <section class="intro" id="intro">
+    <img src="WhatsApp Image 2026-02-23 at 2.16.01 AM.jpeg" alt="Valentine Intro" class="intro-img">
+    <h1>"pulchritudinous ❤️"</h1>
+    <p>"keep fighting "</p>
+    <button onclick="askPassword()">Click for a Surprise 💌</button>
+  </section>
+
+  <!-- SURPRISE SECTION -->
+  <section class="surprise" id="surprise">
+    <h2>"a litte appreciated for you "</h2>
+    <img src="WhatsApp Image 2026-02-24 at 1.22.10 AM.jpeg" alt="Surprise Image" class="surprise-img">
+
+    <p id="typingText"></p>
+
+    <button class="love-btn" onclick="revealUpload()">
+      click if you like → 
+    </button>
+
+    <!-- Hidden Upload Button -->
+    <button id="uploadBtn" class="love-btn hidden">
+      upload photos 💕📸
+    </button>
+
+    <input type="file" id="photoInput" accept="image/*" hidden>
+
+    <img id="photoPreview" class="uploaded-img hidden">
+<button class="love-btn" onclick="showSecret()">
+  Reveal Secret Message 🔐
+</button>
+
+<!-- Secret Message -->
+<div id="secretMessage" class="secret hidden">
+  🌙 No matter what happens in life, you are special and appreciated.
+
+You deserve softness, genuine happiness, keep fighting in life.
+
+your very strong girl i know you can do it. ❤️💌
+</div>
+  </section>
+
+
+  
+  <script src="script.js"></script>
+</body>
+</html>
